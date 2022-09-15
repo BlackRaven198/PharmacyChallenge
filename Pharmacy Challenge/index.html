@@ -14,40 +14,45 @@
 </head>
 <body>
 
-    <div class="title"><h1>September Challenge</h1></div>
+    <div  id="title" class="title"><h1 id="title-txt">September Challenge</h1></div>
 
     <div id="main-container">
 
         <div class="player-cards">
 
             <div class="card" id="player1">
-                <img class="character-image" src="./images/dino7.jpeg" alt="cartoon T-Rex saying rawr">
-                <h3>RX-osaurus</h3>
+                <img id="character1" class="character-image " src="./images/dino7.jpeg" alt="cartoon T-Rex saying rawr">
+                <h3>RX-Osaurus</h3>
                 <a href="#" id="btn1" class="lets-go-btn" >Lets Go!</a>
                 <div  class="score"><h3 id="score1"></h3></div>
+                <a href="#" id="subtract-btn-1" class="lets-go-btn">NM 🙅</a>
             </div>
 
             <div class="card"  id="player2">
-                <img class="character-image" src="./images/PharmacyClerkCartoon.png" alt="cartoon image of pharmacy clerk" srcset="">
+                <img id="character2" class="character-image" src="./images/PharmacyClerkCartoon.png" alt="cartoon image of pharmacy clerk" srcset="">
                 <h3>Eric</h3>
                 <a href="#" id="btn2" class="lets-go-btn " style="animation-delay: 0.21s;">Lets Go!</a>
                 <div class="score"><h3 id="score2"></h3></div>
+                <a href="#" id="subtract-btn-2" class="lets-go-btn">NM 🙅</a>
             </div>
     
             <div class="card" id="player3">
-                <img class="character-image" src="./images/PharmacyClerk2FemaleCartoon.png" alt="cartoon image of a female pharmacy clerk" >
+                <img id="character3" class="character-image" src="./images/PharmacyClerk2FemaleCartoon.png" alt="cartoon image of a female pharmacy clerk" >
                 <h3>Nana</h3>
                 <a href="#" id="btn3" class="lets-go-btn">Lets Go!</a>
                 <div class="score"><h3 id="score3"></h3></div>
+                <a href="#" id="subtract-btn-3" class="lets-go-btn">NM 🙅</a>
             </div>
 
            
         </div>
-
-        <button id="reset-score" class="button" >Reset All Scores</button>
+        <div id="button-div">
+            <button id="reset-score" class="button" >Reset All Scores</button>
+        </div>
+       
 
     </div>
-    <!-- <a  id="reset-score" class="button">Reset All Scores</a> -->
+   
   
 </body>
 </html>

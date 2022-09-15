@@ -11,21 +11,36 @@ body {
     background-color: #8ae2ff;
     border-radius: 5%;
     width: 500px;
-    height: 750px;
+    height: 100%;
     margin: auto;
-    /* justify-content: center; */
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  
 
 }
+.title {
+  margin-top: 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#title-txt{
+  color: whitesmoke;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 /* player cards => card (character-image btn lets-go-btn score) */
 .player-cards {
    display: flex;
-  justify-content:stretch;
+  justify-content:center;
   align-items:baseline;
   
 }
 
 .card {
-  display: inline;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin: 20px;
   align-items: center;
@@ -36,10 +51,7 @@ body {
 
 
 /* specific divs */
-.title {
-  text-align: center;
-  color: #FFFFFF;
-}
+
 
 .character-image{
     max-width: 75px;
@@ -101,12 +113,42 @@ a.lets-go-btn{
 a.lets-go-btn:hover{
     background-color: #4095c6;
 }
+#subtract-btn-1,
+#subtract-btn-2,
+#subtract-btn-3{
+  margin-top: 10px;
+}
+#button-div{
+  display: flex;
+}
+button.button{
+  margin: auto;
+}
 
 
+/* NEED TO CONSOLIDATE BUTTON THEMES AND CREATE ONE BASE CLASS FOR ALL BUTTONS */
 
 
-
-
+/* Trying to animate the character images  */
+.character-image {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-color: #d4aaf1;
+  transform-origin: bottom;
+}
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0%   { transform: scale(1,1)    translateY(0); }
+  10%  { transform: scale(1.1,.9) translateY(0); }
+  30%  { transform: scale(.9,1.1) translateY(-40px); }
+  50%  { transform: scale(1,1)    translateY(0); }
+  57%  { transform: scale(1,1)    translateY(-7px); }
+  64%  { transform: scale(1,1)    translateY(0); }
+  100% { transform: scale(1,1)    translateY(0); }
+}
 
 
 
